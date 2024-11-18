@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const Routes=require('./middleware/Routes')
 
+const ErrorHandler=require('./middleware/ErrorHandler')
+
 //Routes comes here
 
 app.listen(3000, () => {
@@ -9,3 +11,5 @@ app.listen(3000, () => {
 });
 
 require('./middleware/Routes.js')(app);
+
+app.use(ErrorHandler)
