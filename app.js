@@ -6,6 +6,9 @@ const ErrorHandler=require('./middleware/ErrorHandler')
 
 //Routes comes here
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 app.listen(3000, () => {
   console.log('App listening on port 3000!');
 });
@@ -13,3 +16,4 @@ app.listen(3000, () => {
 require('./middleware/Routes.js')(app);
 
 app.use(ErrorHandler)
+module.exports=app
