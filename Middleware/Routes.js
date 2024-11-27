@@ -33,8 +33,7 @@ module.exports = function (app) {
 	})
 	
 	app.delete('/deletebooks/:id',(req,res,next)=>{
-		console.log('Entered=======')
-	    CRUD.DeleteBooks(req,res,next)
+		 CRUD.DeleteBooks(req,res,next)
 	})
 	
 	app.all('*', (req, res, next) => {

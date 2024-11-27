@@ -1,5 +1,9 @@
 
 const errorCodes = {
+   SUCCESS: {
+    code: 200,
+    message: "Request completed Successfully"
+  },
 	 BAD_REQUEST: {
     code: 400,
     message: "Some parameter is missing in your Request"
