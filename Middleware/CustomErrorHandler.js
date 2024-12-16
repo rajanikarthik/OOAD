@@ -4,8 +4,8 @@
 //free to extend the BaseError
 class APIError {
  constructor(name, httpCode , isOperational = true, description = 'internal server error') {
-   if(isOperational)
-     console.log("--------") // Need to log the details in to the system come here
+  // if(isOperational)
+    // Need to log the details in to the system come here
    this.name=name
    this.statuscode=httpCode
    
